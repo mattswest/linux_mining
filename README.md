@@ -2,7 +2,7 @@
 
 Flash ubuntu-18.04.5-live-server-amd64.iso to USB with UUI
 
-Boot and install
+Boot and follow on-screen instructions to install
 
 ```
 #Upgrade Kernel
@@ -26,15 +26,13 @@ sudo reboot
 ##THEN##
 
 
-##Download PhoenixMiner
-
+#Download PhoenixMiner
 wget "https://github.com/mattswest/linux_mining/raw/master/PhoenixMiner_5.5c_Linux.tar.gz"
 tar -xf PhoenixMiner_5.5c_Linux.tar.gz
 
 ##OR##
 
-###Install RainbowMiner
-
+#Install RainbowMiner
 sudo apt-get update
 sudo apt-get install git
 git clone https://github.com/rainbowminer/RainbowMiner
