@@ -1,6 +1,7 @@
 # Basic setup guide
 
 Flash ubuntu-18.04.5-live-server-amd64.iso to USB with UUI
+https://releases.ubuntu.com/18.04/ubuntu-18.04.5-live-server-amd64.iso
 
 Boot and install
 
