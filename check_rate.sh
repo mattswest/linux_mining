@@ -1,6 +1,6 @@
 #!/bin/bash
 
-URL="http://192.168.86.55:30800/"
+URL="ADD_PHOENIX_URL_HERE"
 
 POWER="$(curl -s $URL | grep 'GPUs power:' | tail -n 1  | cut -d ' ' -f 3-4 | cut -d '<' -f 1)"
 HASHRATE="$(curl -s $URL | grep 'Eth speed:' | tail -n 1 | cut -d ' ' -f 4-5 | cut -d ',' -f 1)"
