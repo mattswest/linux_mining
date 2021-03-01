@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/home/matt/PhoenixMiner_4.2c_Linux/RainbowMiner/Bin/GPU-Phoenix/PhoenixMiner -cdmport 30800 -coin auto -di 0 -pool daggerhashimoto.usa.nicehash.com:3353 -wal 3J4jBRQZTScgT3t1yzN7PYsNwdoAPQxC9s.ubuntuminerone -pass x -proto 4 -stales 0 -amd -allpools 0 -cdm 1 -leaveoc -log 0 -rmode 0 -wdog 1
+ExecStart=$PHOENIXMINER_LOCATION -cdmport 30800 -coin auto -di 0 -pool $POOL_URL -wal $WALLET.$WORKERNAME -pass x -proto 4 -stales 0 -amd -allpools 0 -cdm 1 -leaveoc -log 0 -rmode 0 -wdog 1
 Restart=always
 
 [Install]
