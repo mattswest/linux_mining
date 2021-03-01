@@ -1,9 +1,10 @@
 # Basic setup guide
 
-#Install Ubuntu
-#Flash ubuntu-18.04.5-live-server-amd64.iso to USB with UUI
-#Boot and install
+Flash ubuntu-18.04.5-live-server-amd64.iso to USB with UUI
 
+Boot and install
+
+```
 #Upgrade Kernel
 sudo apt update
 sudo apt install linux-image-5.4.0-54-generic linux-headers-5.4.0-54-generic linux-modules-extra-5.4.0-54-generic
@@ -26,12 +27,14 @@ sudo reboot
 
 
 ##Download PhoenixMiner
+
 wget "https://github.com/mattswest/linux_mining/raw/master/PhoenixMiner_5.5c_Linux.tar.gz"
 tar -xf PhoenixMiner_5.5c_Linux.tar.gz
 
 ##OR##
 
 ###Install RainbowMiner
+
 sudo apt-get update
 sudo apt-get install git
 git clone https://github.com/rainbowminer/RainbowMiner
@@ -39,3 +42,4 @@ cd RainbowMiner
 chmod +x *.sh
 sudo ./install.sh
 ./start.sh
+```
