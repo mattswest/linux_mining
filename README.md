@@ -20,7 +20,7 @@ cd amdgpu-pro-20.20-1089974-ubuntu-18.04
 ./amdgpu-pro-install -y --opencl=pal,legacy,rocm --headless
 sudo usermod -a -G video $LOGNAME
 sudo vi /etc/default/grub  ##change GRUB_CMDLINE_LINUX=""
-                     ##    to GRUB_CMDLINE_LINUX="amdgpu.ppfeaturemask=0xffffffff"
+                           ##    to GRUB_CMDLINE_LINUX="amdgpu.ppfeaturemask=0xffffffff"
 sudo update-grub
 sudo reboot
 
