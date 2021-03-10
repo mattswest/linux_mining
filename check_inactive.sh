@@ -1,10 +1,14 @@
 #!/bin/bash
 
-INACTIVE_MINERS="$(curl -s "https://hiveon.net/eth?miner=0x0855f651Ed69B60A3104C7fd7e3FE6F8682Cf5D4" | hxnormalize | grep "Inactive" -B 3 | grep 1Apyc | cut -d '<' -f 2 | cut -d '>' -f 2)"
+WALLET_ADDR=""
 
-if [[ -n $INACTIVE_MINERS ]]
+WALLET_ADDR_FIXED="$(echo $WALLET_ADDR | cut -c 3- | tr '[:upper:]' '[:lower:]')"
+
+INACTIVE_MINERS="$(http "https://hiveon.net/api/v1/stats/miner/$WALLET_ADDR_FIXED/ETH" | jq .offlineWorkerCount | cut -d '"' -f 2)"
+
+if [[ $INACTIVE_MINERS -gt 0 ]]
 then
-	/home/matt/discord_bot.sh "Miner Bot" "Miners are inactive"
+	/home/matt/discord_bot.sh "Miner Bot" "$INACTIVE_MINERS miners are inactive"
 fi
 
 sleep 60
