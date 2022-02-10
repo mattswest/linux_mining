@@ -22,7 +22,7 @@ sudo usermod -a -G video $LOGNAME
 sudo vi /etc/default/grub  ##change GRUB_CMDLINE_LINUX=""
                            ##    to GRUB_CMDLINE_LINUX="amdgpu.ppfeaturemask=0xffffffff"
 sudo update-grub
-sudo reboot
+sudo shutdown -r now
 
 
 ##THEN##
