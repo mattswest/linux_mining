@@ -11,7 +11,7 @@ sudo apt update
 sudo apt install -y linux-image-5.4.0-54-generic linux-headers-5.4.0-54-generic linux-modules-extra-5.4.0-54-generic
 sudo apt remove linux-image-4.15.0-136-generic linux-image-unsigned-4.15.0-136-generic linux-headers-4.15.0-136 linux-modules-extra-4.15.0-136-generic
 sudo apt autoremove
-sudo reboot
+sudo shutdown -r now
 
 #Install drivers
 wget --referer support.amd.com https://drivers.amd.com/drivers/linux/amdgpu-pro-20.20-1089974-ubuntu-18.04.tar.xz 
