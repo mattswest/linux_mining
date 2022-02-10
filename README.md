@@ -8,7 +8,7 @@ Boot and follow on-screen instructions to install
 ```
 #Upgrade Kernel
 sudo apt update
-sudo apt install linux-image-5.4.0-54-generic linux-headers-5.4.0-54-generic linux-modules-extra-5.4.0-54-generic
+sudo apt install -y linux-image-5.4.0-54-generic linux-headers-5.4.0-54-generic linux-modules-extra-5.4.0-54-generic
 sudo apt remove linux-image-4.15.0-136-generic linux-image-unsigned-4.15.0-136-generic linux-headers-4.15.0-136 linux-modules-extra-4.15.0-136-generic
 sudo apt autoremove
 sudo reboot
