@@ -17,7 +17,7 @@ sudo shutdown -r now
 wget --referer support.amd.com https://drivers.amd.com/drivers/linux/amdgpu-pro-20.20-1089974-ubuntu-18.04.tar.xz 
 tar -xf amdgpu-pro-20.20-1089974-ubuntu-18.04.tar.xz
 cd amdgpu-pro-20.20-1089974-ubuntu-18.04
-./amdgpu-pro-install -y --opencl=pal,legacy,rocm --headless
+sudo ./amdgpu-pro-install -y --opencl=pal,legacy,rocm --headless
 sudo usermod -a -G video $LOGNAME
 sudo vi /etc/default/grub  ##change GRUB_CMDLINE_LINUX=""
                            ##    to GRUB_CMDLINE_LINUX="amdgpu.ppfeaturemask=0xffffffff"
