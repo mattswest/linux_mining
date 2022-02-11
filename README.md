@@ -29,7 +29,7 @@ sudo shutdown -r now
 
 
 #Download PhoenixMiner
-wget "https://phoenixminer.info/downloads/PhoenixMiner_5.5c_Linux.tar.gz"
+wget "https://github.com/mattswest/linux_mining/raw/master/PhoenixMiner_5.5c_Linux.tar.gz"
 tar -xf PhoenixMiner_5.5c_Linux.tar.gz
 
 ##OR##
